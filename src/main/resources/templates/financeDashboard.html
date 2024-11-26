@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet" />
+    <title>Student Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/css/dashboard.css">
+</head>
+<body>
+<script src="/js/financeDashboard.js"></script>
+<div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">TUTORMATE</div>
+        <div class="login-text">Finance Dashboard</div>
+        <nav class="nav">
+            <a th:href="@{/finance/profile}">My Profile</a>
+            <a th:href="@{/finance/uploadedFiles}" id="viewPayments">View Uploaded Payments</a>
+            <a th:href="@{/help}">Help & Support</a>
+            <a th:href="@{/logout}">Logout</a>
+        </nav>
+    </aside>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <h1>Welcome to Tutormate</h1>
+        </header>
+        <!-- Content Area -->
+        <section class="content" id="contentArea">
+            <div class="tab">
+                <button class="tab-link active">Classes</button>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+</html>
